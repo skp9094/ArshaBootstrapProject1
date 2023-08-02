@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f5fa;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    overflow-x: hidden !important;
+}
+/* *************************************** Utility Class ************************************** */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* *************************************** Start header styling ************************************** */
+    header{
+        height: 80vh;
+        border-top: 1px solid #37517e;
+        background-color: #37517e;
+    }
+    /* ************* Start Nav Styling ************* */
+        .navBar{
+            height: 75px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999 !important;
+        }
+        .modal-backdrop{
+            position: relative;
+            z-index: 9999 !important;
+        }
+        .navBar .right .mobile .modal-body .manue a{
+            color: rgb(36, 37, 37);
+            display: block;
+            padding: 5px 0;
+        }
+        .navBar .right .mobile .modal-body .manue a:hover{
+            color: skyblue;
+            background-color: #ebebeb;
+        }
+        /* ********* Drop Down style ********** */
+        .navBar .right .mobile .modal-body .manue .drop_down1 .drop_down_list1{
+            display: none;
+        }
+        .navBar .right .mobile .modal-body .manue .drop_down1 .drop_down_list2{
+            display: none;
+        }
+        /* add calss with js events */
+        .d_none_show{
+            display: block !important;
+            border-bottom: 1px solid gray;
+        }
+        /* ****** web Styling ******* */
+        .navBar .right .web .menue> li> a{
+            padding: 8px 15px;
+            color: #eee;
+            transition: all 0.3s;
+        }
+        #active{
+            color: skyblue;
+        }
+        .navBar .right .web ul >li:hover> a{
+            color: skyblue;
+        }
+        .navBar .right .web ul li{
+            position: relative;
+        }
+        .navBar .right .web .web_drop_down_list{
+            width: 230px;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            border-radius: 5px;
+            background-color: #e1e1e1;
+            display: none;
+        }
+        .navBar .right .web .web_drop_down_list a{
+            display: block;
+            padding: 10px;
+            color: #242628;
+            transition: all 0.3s;
+        }
+        .web_drop_down_list2{
+            top: -5px !important;
+            left: -100% !important;
+            background-color: #fff !important;
+            border-right: 2px solid rgba(0,0,0,0.1);
+        }
+        .navBar .right .web ul>li:hover>ul{
+            display: block;
+        }
+    /* ************* End Nav Styling ************* */
+    /* ************* Star hero Styling ************* */
+        .hero{
+            margin-top: 75px;
+            height: 83%;
+        }
+        .hero .left h1{
+            color: #eee;
+            font-size: 45px;
+            letter-spacing: 2px;
+        }
+        .hero .left button:last-child:hover i{
+            color: #6496ec !important;
+        }
+        .hero .right img{
+            animation-name: ani;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        @keyframes ani{
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(-50px);
+            }
+        }
+    /* ************* End hero Styling ************* */
+/* *************************************** End header styling ************************************** */
+/* *************************************** Start Main styling ************************************** */
+    /* *********** Start Company Styling ********** */
+        main .company{
+            height: 97px;
+            background-color: #eee;
+            line-height: 97px;
+        }
+        main .company img{
+            filter: brightness(0);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        main .company img:hover{
+            filter: brightness(1);
+        }
+    /* *********** End Company Styling ********** */
+    /* *********** Start About Styling ********** */
+        main .about{
+            background-color: #fff;
+            padding: 50px 0;
+        }
+        main .about h2{
+            color: #37517e;
+        }
+        main .box .line1{
+            width: 10%;
+            height: 1px;
+            background-color: #79797a;
+            margin: auto;
+        }
+        main .box .line2{
+            width: 5%;
+            height: 4px;
+            background-color: #6496ec;
+            margin: auto;
+            position: relative;
+            top: -3px;
+            z-index: 99 ;
+        }
+    /* *********** End About Styling ********** */
+    /* *********** Start Accordian Styling ********** */
+        main .accordian{
+            height: 650px;
+            padding: 30px 0;
+        }
+        main .accordion-button:focus{
+            color: skyblue;
+            outline: 0 !important;
+            box-shadow: none !important;
+            background-color: transparent;
+            z-index: 23 !important;
+        }
+    /* *********** End Accordian Styling ********** */
+
+    /* *********** Start Progress Styling ********** */
+        main .progress-box{
+            height: 510px;
+            background-color: #fff;
+            padding: 30px 0;
+        }
+    /* *********** End Progress Styling ********** */
+    /* *********** Start Services Styling ********** */
+        main .services .container .box{
+            height: 260px;
+        }
+        main .services .container .box .card:hover h4{
+            color: #37517e;
+        }
+        main .services .container .box .card{
+            transition: all 0.3s;
+            cursor: default;
+        }
+        main .services .container .box .card:hover{
+            transform: translateY(-10px);
+        }
+    /* *********** End Services Styling ********** */
+    /* *********** Start Paralex Styling ********** */
+        main .paralex{
+            height: 350px;
+            background-image: linear-gradient(rgba(27, 30, 62, 0.8),rgba(27, 31, 62, 0.8)),url(../img/cta-bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    /* *********** End Paralex Styling ********** */
+    /* *********** Start Portfolio Styling ********** */
+        main .portfolio{
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        main .portfolio .btn-group button{
+            transition: all 0.4s;
+        }
+        main .portfolio .btn-group button:hover{
+            background-color: #47b2e4;
+            color: #fff !important;
+        }
+
+        main .portfolio img{
+            width: 100%;
+            height: auto;
+            transition: all 0.3s;
+            position: relative;
+        }
+        main .portfolio .box{
+           position: relative;
+           overflow: hidden;
+        }
+        main .portfolio .box .hower-info{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(36,53,90,0.8);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+        }
+        main .portfolio .box:hover .hower-info{
+            visibility: unset;
+        }
+        main .portfolio .box:hover img{
+            transform: scale(1.15);
+        }
+    /* *********** End Portfolio Styling ********** */
+    /* *********** Start Tema Styling ********** */
+        main .team .card{
+            height: 230px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+        }
+        main .team .card:hover{
+            transform: translateY(-10px);
+        }
+    /* *********** End Tema Styling ********** */
+    /* *********** Start Pricing Styling ********** */
+        main .pricing{
+            background-color: #fff;
+        }
+        main .pricing .container .box .card{
+            height: 570px;
+            background-color: #fff;
+            padding: 50px 30px;
+            border: 0;
+            box-shadow: 2px 2px 9px rgba(0,0,0,0.1),-2px -2px 9px rgba(0,0,0,0.1);
+        }
+        main .pricing .container .box:nth-child(2) .card{
+            border-top: 5px solid rgb(73, 180, 222);
+        }
+        main .pricing .container .box .card ul li{
+            margin-bottom: 16px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        main .pricing .container .box .card ul li span{
+            font-size: 18px;
+        }
+    /* *********** End Pricing Styling ********** */
+    /* *********** Start Contact Styling ********** */
+        main .contact{
+            background-color: #fff;
+        }
+        main .contact .left .box{
+            height: 65px;
+            /* border: 1px solid green; */
+            margin-bottom: 20px;
+            color: #37517e;
+        }
+        main .contact .left .box i{
+            background-color: #47b2e483;
+            color: #47b2e4;
+        }
+        main .contact .left .box:hover i{
+            background-color: #68b6ca;
+            color: #fff;
+        }
+        main .contact .left,main .contact .right{
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1),-2px -2px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            border-top: 5px solid #47b2e4;
+            border-bottom: 5px solid #47b2e4;
+        }
+    /* *********** End Contact Styling ********** */
+    /* *********** Start Memebership Styling ********** */
+        main .membership{
+            height: auto;
+        }
+    /* *********** End Memebership Styling ********** */
+/* *************************************** End Main styling ************************************** */
+/* *************************************** Start Footer styling ************************************** */
+    /* ********** Start Footer_top Styling ********** */
+        .footer_top{
+            height: 340px;
+            background-color: #fff;
+        }
+        .footer_top .container .row ul li a{
+            color: #79797a;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 20px;
+        }
+    /* ********** End Footer_top Styling ********** */
+    /* ********** Start Footer_bottom Styling ********** */
+        .footer_bottom{
+            background-color: #37517e;
+        }
+    /* ********** End Footer_bottom Styling ********** */
+/* *************************************** End Footer styling ************************************** */
+
+
+/* *************************************** Start MediaQuarry ************************************** */
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 95%;
+    }
+}
+@media all and (max-width:768px){
+    .hero .left h1{
+        font-size: 30px;
+    }
+    .hero .left p{
+        font-size: 18px !important;
+    }
+    main .box .line1{
+        width: 20%;
+    }
+    main .box .line2{
+        width: 10%;
+    }
+    main .team .card{
+        height: 250px;
+    }
+}
+@media (max-width:992px){
+    header{
+        height: auto;
+    }
+    main .company{
+        height: auto;
+    }
+    main .accordian{
+        height: auto;
+    }
+    main .progress-box{
+        height: auto;
+    }
+    main .services{
+        height: auto;
+    }
+    .footer_top{
+        height: auto;
+    }
+}
+@media all and (min-width:1020px){
+    main .paralex{
+        background-attachment: fixed;
+    }
+}
+
+
+.accordian,.progress-box,.team{
+    overflow-x: hidden !important;
+}

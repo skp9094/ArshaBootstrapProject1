@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arsha bootstrap templeat indexfile</title>
+        <meta charset="utf-u" />
+        <meta name="viewport" content="width=device,initial-scale=1.0" /> 
+        <meta name="discreption" content="This is bootstrap Templeat 1" /> 
+        <meta name="keyword" content="bootstrap templeat section 1" />
+        <meta name="author" content="souravKumar" />
+        <meta name="robots" content="index,fillowing" />
+        <meta http-equiv="refresh" content="" />
+        <meta http-equiv="" content="" />
+        <!-- **************************** Bootstrap CSS CDN link's ********************************** -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+        <!-- **************************** fontAwsome CDN link's ********************************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- **************************** AOS CSS CDN Link's ********************************** -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- **************************** Custom File link's ********************************** -->
+        <link rel="stylesheet" href="./assert/css/style.css" />
+        <link rel="shortcut icon" href="./assert/img/favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <!-- ***************************** Start Header Section ********************************* -->
+            <header class="w-100">
+                <nav class="navBar w-100">
+                    <div class="container h-100 ">
+                        <div class="row h-100  justify-content-between">
+                            <div class="left col-2  d-flex align-items-center">
+                                <h2 class="m-0 text-light">ARSHA</h2>
+                            </div>
+                            <div class="right h-100 col-10  p-0">
+                                <!-- *************Mobile************ -->
+                                <div class="mobile h-100  d-flex justify-content-end align-items-center d-lg-none">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <span class="navbar-toggler-icon "><i class="fa-solid fa-bars fs-3" style="color: #e2e3e4;"></i></span>
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog mt-5">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close bg-light"  data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul class="manue p-0">
+                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="#">About</a></li>
+                                                    <li><a href="#">Services</a></li>
+                                                    <li><a href="#">Portfolio</a></li>
+                                                    <li><a href="#">Team</a></li>
+                                                    <li class="drop_down1"><a href="#">Drop Down  <i class="fa-solid fa-angle-down float-end me-4 mt-1"></i></a>
+                                                        <ul class="drop_down_list1 p-0">
+                                                            <li><a href="#">Drop Down1</a></li>
+                                                            <li class="drop_down2"><a href="#">Deep Drop Down <i class="fa-solid fa-angle-right float-end me-4 mt-1"></i></a>
+                                                                <ul class="drop_down_list2 p-0">
+                                                                    <li><a href="#">Deep Drop Down1</a></li>
+                                                                    <li><a href="#">Deep Drop Down2</a></li>
+                                                                    <li><a href="#">Deep Drop Down3</a></li>
+                                                                    <li><a href="#">Deep Drop Down4</a></li>
+                                                                    <li><a href="#">Deep Drop Down5</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Drop Down2</a></li>
+                                                            <li><a href="#">Drop Down3</a></li>
+                                                            <li><a href="#">Drop Down4</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="btn btn-outline-info d-block">Get Stated</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+  
+                                </div>
+                                <!-- ************* Web ************* -->
+                                <div class="web h-100  d-flex align-items-center justify-content-center d-none d-lg-block p-0">
+                                    <ul class="menue d-flex h-100 align-items-center  justify-content-end  m-0 p-0">
+                                        <li><a href="#" id="active">Home</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Templeat</a></li>
+                                        <li class="web_drop_down1"><a href="#">Drop Down <i class="fa-solid fa-angle-down"></i></a>
+                                            <ul class="web_drop_down_list p-0">
+                                                <li><a href="#">Drop Down1</a></li>
+                                                <li><a href="#">Deep Drop Down <i class="fa-solid float-end p-1 fa-angle-right"></i></a>
+                                                    <ul class="web_drop_down_list web_drop_down_list2 p-0">
+                                                        <li><a href="#">Drop Down1</a></li>
+                                                        <li><a href="#">Deep Drop Down</a></li>
+                                                        <li><a href="#">Drop Down2</a></li>
+                                                        <li><a href="#">Drop Down3</a></li>
+                                                        <li><a href="#">Drop Down4</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Drop Down2</a></li>
+                                                <li><a href="#">Drop Down3</a></li>
+                                                <li><a href="#">Drop Down4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Contact</a></li>
+                                        <button class="btn btn-outline-info  ms-xl-5"> Get Started</button>
+                                    </ul>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </nav>
+                <div class="hero w-100 ">
+                    <div class="container h-100 ">
+                        <div class="row align-items-center h-100">
+                            <div class="col-12 col-lg-6 left p-2 pb-3 p-lg-0 order-2 order-lg-1" data-aos="zoom-in">
+                                <h1><b>Better Solutions For<br> Your Business</b></h1>
+                                <p style="color: rgb(195, 226, 244); font-size: 23px; margin-bottom: 30px;"><b>We are team of talented designers making websites<br> with Bootstrap</b></p>
+                                <button class="btn btn-info rounded-5"><a class="text-light fw-bold fs-5" href="#">Get Started</a></button>
+                                <button class="btn rounded-5"><a class="text-light fs-5" href="#"><i class="fa-regular fs-4 fa-circle-play"></i>&nbsp; Watch Vieo</a></button>
+                            </div>
+                            <div class="col-12 col-lg-6 right h-100 order-lg-2 order-1" data-aos="zoom-in">
+                                <img src="./assert/img/hero-img.png" alt="hero" width="100%" height="100%" style="object-fit: contain;"/>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </header>
+        <!-- ***************************** End Header Section ********************************* -->
+        <!-- ***************************** Start Main Section ********************************* -->
+            <main class="w-100">
+                <!-- *********** Start Company Section *********** -->
+                    <div class="company w-100">
+                        <div class="container h-100">
+                            <div class="row h-100" data-aos="zoom-in">
+                                <div class="col-6 col-md-4 col-lg-2 text-center h-100">
+                                    <img src="./assert/img/clients/client-1.png" class="img-fluid" alt="client-1" width="60%" />
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 text-center h-100">
+                                    <img src="./assert/img/clients/client-2.png" class="img-fluid" alt="client-1" width="60%" />
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 text-center h-100">
+                                    <img src="./assert/img/clients/client-3.png" class="img-fluid" alt="client-1" width="60%" />
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 text-center h-100">
+                                    <img src="./assert/img/clients/client-4.png" class="img-fluid" alt="client-1" width="60%" />
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 text-center h-100">
+                                    <img src="./assert/img/clients/client-5.png" class="img-fluid" alt="client-1" width="60%" />
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 text-center h-100">
+                                    <img src="./assert/img/clients/client-6.png" class="img-fluid" alt="client-1" width="70%" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- *********** End Company Section *********** -->
+                <!-- *********** Start About Section *********** -->
+                    <div class="about w-100"  data-aos="fade-up">
+                        <div class="heading text-center">
+                            <h2 class="mb-3"><b>ABOUT US</b></h2>
+                            <div class="box">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                        <!-- About Content -->
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 text-secondary">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p><i class="fa-solid fa-check-double" style="color: #45a4d3;"></i> &nbsp; Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                    <p><i class="fa-solid fa-check-double" style="color: #45a4d3;"></i> &nbsp; Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                                    <p><i class="fa-solid fa-check-double" style="color: #45a4d3;"></i> &nbsp; Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                </div>
+                                <div class="col-12 col-lg-6 text-secondary">
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    <button class="btn btn-outline-info col-6 col-sm-4 mt-3">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- *********** End About Section *********** -->
+                <!-- *********** Start Accordian Section *********** -->
+                    <div class="accordian  w-100">
+                        <div class="container-lg h-100">
+                            <div class="row align-items-center h-100">
+                                <div class="col-12 col-lg-6 order-2 order-lg-1"  data-aos="fade-up">
+                                    <h2 style="color: #0c4663;">Eum ipsam laborum deleniti <b>velit<br> pariatur architecto aut nihil</b></h2>
+                                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                                    <!-- Accordion -->
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item mb-3 rounded-3">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              <b><span class="text-info">01</span> &nbsp; Non consectetur a erat nam at lectus urna duis?</b>
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item mb-3 rounded-3">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                <b><span class="text-info">02</span> &nbsp;  Feugiat scelerisque varius morbi enim nunc?</b>
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item mb-3 rounded-3">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                <b><span class="text-info">03</span> &nbsp;  Dolor sit amet consectetur adipiscing elit?</b>
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 mb-2 mb-lg-0 mx-auto col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+                                    <img src="./assert/img/why-us.png" alt="why-us" class="img-fluid"/> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- *********** End Accordian Section *********** -->
+                <!-- *********** Start Progress Section *********** -->
+                    <div class="progress-box w-100 ">
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center">
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0" data-aos="fade-up-right">
+                                    <img src="./assert/img/skills.png" alt="skills" class="img-fluid" />
+                                </div>
+                                <div class="col-12 col-lg-6" data-aos="fade-up-left">
+                                    <h2 style="color: #0c4663;"><b>Voluptatem dignissimos<br> provident quasi corporis<br> voluptates</b></h2>
+                                    <i style="font-size: 16px; font-weight: bold; color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i>
+                                    <div class="box mt-3">
+                                        <div class="d-flex justify-content-between align-items-center px-1 mb-1">
+                                            <span>HTML</span>
+                                            <span>100%</span>
+                                        </div>
+                                        <div class="progress bg-secondary rounded-0" style="height: 10px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="box mt-3">
+                                        <div class="d-flex justify-content-between align-items-center px-1 mb-1">
+                                            <span>CSS</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="progress bg-secondary rounded-0" style="height: 10px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="box mt-3">
+                                        <div class="d-flex justify-content-between align-items-center px-1 mb-1">
+                                            <span>JAVASCRIPT</span>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="progress bg-secondary rounded-0" style="height: 10px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="box mt-3">
+                                        <div class="d-flex justify-content-between align-items-center px-1 mb-1">
+                                            <span>PHOTOSHOP</span>
+                                            <span>55%</span>
+                                        </div>
+                                        <div class="progress bg-secondary rounded-0" style="height: 10px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 55%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- *********** End Progress Section *********** -->
+                <!-- *********** Start Services Section *********** -->
+                    <div class="services w-100 py-4">
+                        <div class="heading text-center" data-aos="zoom-in">
+                            <h2 class="mb-3"><b>SERVICES</b></h2>
+                            <div class="box">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                        <!-- Content -->
+                        <div class="container">
+                            <p class="py-3" style="text-align-last: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <div class="row  justify-content-betwee">
+                                <div class="col-12 col-md-6 mb-4 mb-xl-0 col-xl-3 box" data-aos="zoom-in">
+                                    <div class="card h-100 pt-5 px-4" >
+                                        <i class="fa-solid fa-basketball fs-2 pb-3" style="color: #32bbcd;"></i>
+                                         <h4 class="fw-semibold">Lorem Ipsum</h4>
+                                        <p class="text-secondary">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4 mb-xl-0 col-xl-3 box" data-aos="zoom-in">
+                                    <div class="card h-100 pt-5 px-4" >
+                                        <i class="fa-solid fa-basketball fs-2 pb-3" style="color: #32bbcd;"></i>
+                                        <h4 class="fw-semibold" >Sed ut perspici</h4>
+                                        <p class="text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4 mb-xl-0 col-xl-3 box" data-aos="zoom-in">
+                                    <div class="card h-100 pt-5 px-4" >
+                                        <i class="fa-solid fa-basketball fs-2 pb-3" style="color: #32bbcd;"></i>
+                                        <h4 class="fw-semibold">Magni Dolores</h4>
+                                        <p class="text-secondary">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-4 mb-xl-0 col-xl-3 box" data-aos="zoom-in">
+                                    <div class="card h-100 pt-5 px-4" >
+                                        <i class="fa-solid fa-basketball fs-2 pb-3" style="color: #32bbcd;"></i>
+                                         <h4 class="fw-semibold">Nemo Enim</h4>
+                                        <p class="text-secondary">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- *********** End Services Section *********** -->
+                <!-- *********** Start Paralex Section *********** -->
+                    <div class="paralex w-100">
+                        <div class="container-fluid h-100 pt-5"  data-aos="zoom-in">
+                            <div class="row pb-3 h-100 align-items-center  text-center text-lg-start justify-conent-center">
+                                <div class="col-lg-9 text-light" >
+                                    <h2 class="fw-bolder"><b>Call To Action</b></h2>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="col-lg-3 pb-5 text-center">
+                                    <button class="btn  btn-outline-light">Call to Action</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                <!-- *********** End Paralex Section *********** -->
+                <!-- *********** Start Portfolio Section *********** -->
+                    <div class="portfolio w-100">
+                        <div class="heading text-center " data-aos="fade-up">
+                            <h2 class="mb-3"><b>PORTFOLIO</b></h2>
+                            <div class="box">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                        <!-- content -->
+                        <div class="container mt-4">
+                            <p style="text-align-last: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <div class="row" data-aos="fade-up">
+                                <div class="col my-3 text-center">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn mx-md-2 rounded-5 btn-info text-light fw-bold">ALL</button>
+                                        <button type="button" class="btn mx-md-2 rounded-5 text-dark fw-bold">APP</button>
+                                        <button type="button" class="btn mx-md-2 rounded-5 text-dark fw-bold">Card</button>
+                                        <button type="button" class="btn mx-md-2 rounded-5 text-dark fw-bold">WEB</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" data-aos="fade-up">
+                                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column gap-3 pb-3">
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-1.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box d-none d-md-inline-block d-lg-none">
+                                        <img src="./assert/img/portfolio/portfolio-4.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-6.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box d-none d-md-inline-block d-lg-none">
+                                        <img src="./assert/img/portfolio/portfolio-8.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column gap-3 pb-3">
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-2.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box d-none d-md-inline-block d-lg-none">
+                                        <img src="./assert/img/portfolio/portfolio-3.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-5.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box d-none d-md-inline-block d-lg-none">
+                                        <img src="./assert/img/portfolio/portfolio-7.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-9.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 d-flex d-md-none d-lg-flex flex-column pb-3 gap-3">
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-3.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-4.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-7.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <img src="./assert/img/portfolio/portfolio-8.jpg" alt="portfolio-1">
+                                        <div class="hower-info">
+                                            <div class="row align-items-center">
+                                                <div class="col m-2 text-light">
+                                                    <h5>App1</h5>
+                                                    <h6>App</h6>
+                                                </div>
+                                                <div class="col text-end me-2 fs-5">
+                                                    <i class="fa-solid fa-plus me-2" style="color: #e3e5e8;"></i>
+                                                    <i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                <!-- *********** End Portfolio Section *********** -->
+                <!-- *********** Start Tema Section *********** -->
+                    <div class="team w-100 py-5">
+                        <div class="heading text-center " data-aos="zoom-in">
+                            <h2 class="mb-3"><b>TEAM</b></h2>
+                            <div class="box">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                        <!-- Content -->
+                        <div class="container">
+                            <p class="my-4">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <div class="row row-gap-3">
+                                <div class="col-lg-6 ps-sm-0 ps-lg-0 " data-aos="fade-right">
+                                    <div class="card ">
+                                        <div class="row h-100 align-items-center  g-0">
+                                            <div class="col-4">
+                                              <img src="./assert/img/team/team-1.jpg" class="p-2 p-md-4 p-lg-3 img-fluid rounded-circle" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="color: #083850;"><b>Walter White</b></h5>
+                                                <p class="card-text m-0">Chief Executive Officer</p>
+                                                <div class="line1 mt-2" style="width: 20%; height: 1px; background-color: #083850;"></div>
+                                                <p class="card-text my-2 " style="line-height: 1;">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                                <!-- btm -->
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-sm-0 pe-lg-0 " data-aos="fade-left">
+                                    <div class="card">
+                                        <div class="row h-100 align-items-center  g-0">
+                                            <div class="col-4">
+                                              <img src="./assert/img/team/team-2.jpg" class="p-2 p-md-4 p-lg-3 img-fluid rounded-circle" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="color: #083850;"><b>Walter White</b></h5>
+                                                <p class="card-text m-0">Chief Executive Officer</p>
+                                                <div class="line1 mt-2" style="width: 20%; height: 1px; background-color: #083850;"></div>
+                                                <p class="card-text my-2 " style="line-height: 1;">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                                <!-- btm -->
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-sm-0 ps-lg-0 " data-aos="fade-right">
+                                    <div class="card">
+                                        <div class="row h-100 align-items-center  g-0">
+                                            <div class="col-4">
+                                              <img src="./assert/img/team/team-3.jpg" class="p-2 p-md-4 p-lg-3 img-fluid rounded-circle" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="color: #083850;"><b>Walter White</b></h5>
+                                                <p class="card-text m-0">Chief Executive Officer</p>
+                                                <div class="line1 mt-2" style="width: 20%; height: 1px; background-color: #083850;"></div>
+                                                <p class="card-text my-2 " style="line-height: 1;">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                                <!-- btm -->
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-sm-0 pe-lg-0 " data-aos="fade-left">
+                                    <div class="card">
+                                        <div class="row h-100 align-items-center g-0">
+                                            <div class="col-4">
+                                              <img src="./assert/img/team/team-4.jpg" class="p-2 p-md-4 p-lg-3 img-fluid rounded-circle" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="color: #083850;"><b>Walter White</b></h5>
+                                                <p class="card-text m-0">Chief Executive Officer</p>
+                                                <div class="line1 mt-2" style="width: 20%; height: 1px; background-color: #083850;"></div>
+                                                <p class="card-text my-2 " style="line-height: 1;">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                                <!-- btm -->
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-primary text-light p-2"><i class="fa-brands fa-joomla" style="color: #e6e8ea;"></i></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                <!-- *********** End Tema Section *********** -->
+                <!-- *********** Start Pricing Section *********** -->
+                    <div class="pricing w-100 py-5">
+                        <div class="heading text-center "  data-aos="zoom-in">
+                            <h2 class="mb-3"><b>PRICING</b></h2>
+                            <div class="box">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <p class="my-4 text-secondary" style="text-align-last: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <div class="row row-gap-3 flex-column flex-lg-row justify-conent-center align-items-center">
+                                <div class="col-11 col-sm-8 col-lg-4 box" data-aos="fade-up">
+                                    <div class="card">
+                                        <h5 style="color: #083850;"><b>Free Plan</b></h5>
+                                        <h1 style="color: #083850;" class="my-2"><sup>$</sup>0</h1>
+                                        <p class="text-info">per month</p>
+                                        <ul class="p-0 text-secondary mt-2">
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Quam adipiscing vitae proin</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Nec feugiat nisl pretium</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Nulla at volutpat diam uteera</li>
+                                            <li> <span><i class="fa-solid fa-xmark" style="color: #b5b7ba;"></i></span>&nbsp; Pharetra massa massa ultricies</li>
+                                            <li> <span><i class="fa-solid fa-xmark" style="color: #b5b7ba;"></i></span>&nbsp; Massa ultricies mi quis hendrerit</li>
+                                        </ul>
+                                        <button class="btn fs-5 rounded-5 text-info btn-outline-info col-10 col-md-7">Get Started</button>
+                                    </div>
+                                </div>
+                                <div class="col-11 col-sm-8 col-lg-4 box" data-aos="fade-up">
+                                    <div class="card">
+                                        <h5 style="color: #083850;"><b>Business Plan</b></h5>
+                                        <h1 style="color: #083850;" class="my-2"><sup>$</sup>29</h1>
+                                        <p class="text-info">per month</p>
+                                        <ul class="p-0 text-secondary mt-2">
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Quam adipiscing vitae proin</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Nec feugiat nisl pretium</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Nulla at volutpat diam uteera</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Pharetra massa massa ultricies</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Massa ultricies mi quis hendrerit</li>
+                                        </ul>
+                                        <button class="btn fs-5 rounded-5 text-light bg-info btn-outline-info col-10 col-md-7">Get Started</button>
+                                    </div>
+                                </div>
+                                <div class="col-11 col-sm-8 col-lg-4 box" data-aos="fade-up">
+                                    <div class="card">
+                                        <h5 style="color: #083850;"><b>Developer Plan</b></h5>
+                                        <h1 style="color: #083850;" class="my-2"><sup>$</sup>0</h1>
+                                        <p class="text-info">per month</p>
+                                        <ul class="p-0 text-secondary mt-2">
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Quam adipiscing vitae proin</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Nec feugiat nisl pretium</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Nulla at volutpat diam uteera</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Pharetra massa massa ultricies</li>
+                                            <li> <span><i class="fa-solid fa-check" style="color: #479e49;"></i></span>&nbsp; Massa ultricies mi quis hendrerit</li>
+                                        </ul>
+                                        <button class="btn fs-5 rounded-5 text-info btn-outline-info col-10 col-md-7">Get Started</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- *********** End Pricing Section *********** -->
+                <!-- *********** Start Qustion Section *********** -->
+                    <div class="qustion w-100 py-5">
+                        <div class="heading text-center " data-aos="fade-up">
+                            <h2 class="mb-3 fw-normal"><b>FREQUENTLY ASKED QUESTIONS</b></h2>
+                            <div class="box">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <p class="my-4" style="text-align-last: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item mb-3" data-aos="fade-up">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button text-info bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                              <div class="fs-5"> <i class="fa-solid fa-question" style="color: #298294;"></i> Non consectetur a erat nam at lectus urna duis?</div>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item mb-3" data-aos="fade-up">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              <div class="fs-5"><i class="fa-solid fa-question" style="color: #298294;"></i> Feugiat scelerisque varius morbi enim nunc?</div>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item mb-3" data-aos="fade-up">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="fs-5"><i class="fa-solid fa-question" style="color: #298294;"></i> Dolor sit amet consectetur adipiscing elit?</div>
+                                              </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                              <div class="accordion-body">
+                                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item mb-3" data-aos="fade-up">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              <div class="fs-5"><i class="fa-solid fa-question" style="color: #298294;"></i> Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</div>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item mb-3" data-aos="fade-up">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              <div class="fs-5"><i class="fa-solid fa-question" style="color: #298294;"></i> Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</div>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- *********** End Qustion Section *********** -->
+                <!-- *********** Start Contact Section *********** -->
+                    <div class="contact w-100 py-5">
+                        <div class="heading text-center " data-aos="fade-up">
+                            <h2 class="mb-3 fw-normal"><b>Contact</b></h2>
+                            <div class="box">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                        <div class="container" data-aos="fade-up">
+                            <p class="my-4" style="text-align-last: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <div class="row gap-4 px-3">
+                                <div class="left col-lg-4 p-4">
+                                    <div class="box d-flex align-items-center">
+                                        <i class="fa-solid fs-4 border p-2 px-3 rounded-circle fa-location-dot"></i>
+                                        <div class="ps-3 ps-sm-2">
+                                            <h5><b>Location</b></h5>
+                                            <small>A108 Adam Street, New York, NY 535022</small>
+                                        </div>
+                                    </div>
+                                    <div class="box d-flex align-items-center">
+                                        <i class="fa-regular fa-envelope fs-4 border p-2 px-3 rounded-circle"></i>
+                                        <div class="ps-3 ps-sm-2">
+                                            <h5><b>Email:</b></h5>
+                                            <small>info@example.com</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="box d-flex align-items-center">
+                                        <i class="fa-solid fa-mobile-screen-button fs-4 border p-2 px-3 rounded-circle"></i>
+                                        <div class="ps-3 ps-sm-2">
+                                            <h5><b>Call:</b></h5>
+                                            <small>+1 5589 55488 55s</small>
+                                        </div>
+                                    </div>
+                                    <div class="map">
+                                        <iframe src="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F" width="100%" height="300"></iframe>
+                                    </div>
+                                </div>
+                                <div class="right col py-4">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                          <label for="inputEmail4" class="form-label">Your Name</label>
+                                          <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="inputPassword4" class="form-label">Your Email</label>
+                                          <input type="email" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-12">
+                                          <label for="inputAddress" class="form-label">Subject</label>
+                                          <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 230px;"></textarea>
+                                        </div>
+                                          <button type="submit" class="btn fw-bold rounded-5 mx-auto col-6 col-sm-3 p-2 btn-info text-light">Send Message</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <!-- *********** End Contact Section *********** -->
+                <!-- *********** Start Membership Section *********** -->
+                    <div class="membership w-100 py-5 ">
+                        <div class="container text-center">
+                            <h4 style="color: #083850;"><b>Join Our Newsletter</b></h4>
+                            <p class="text-secondary">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> 
+                           <div class="row justify-content-center mt-4">
+                            <div class="col-lg-7">
+                                <form class="d-flex">
+                                    <input type="email" class="form-control p-2">
+                                    <button class=" btn btn-info text-light rounded-5" style="margin-left: -5px;" type="submit" id="basic-addo2">@example.com</button>
+                                </form>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                <!-- *********** End Membership Section *********** -->
+            </main>
+        <!-- ***************************** End Main Section ********************************* -->
+        <!-- ***************************** Start Footer Section ********************************* -->
+            <!-- *********** Start Footer Top ********** -->
+                <footer class="footer_top w-100 py-5">
+                    <div class="container h-100">
+                        <div class="row h-100 text-secondary justify-conent-center">
+                            <div class="col-md-6 col-lg-3">
+                                <h3 style="color: #075277;"><b>ARSHA</b></h3>
+                                <address><small>A108 Adam Street<br>New York, NY 535022<br>United States</small></address>
+                                <p class="mb-1"><small><b>Phone:</b>  +1 5589 55488 55</small></p>
+                                <p><small><b>Email:</b>  info@example.com</small></p>
+                            </div>
+                            <div class="col-md-6 col-lg-2">
+                                <h6 class="fw-bold" style="color: #075277;"><b>Useful Links</b></h6>
+                                <ul class="p-0">
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Home</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> About</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Services</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Terms of services</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Privacy policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <h6 class="fw-bold" style="color: #075277;"><b>Our Services</b></h6>
+                                <ul class="p-0">
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Web Design</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Web Development</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Product Management</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Marketing</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right" style="color: #4297cd;"></i> Graphic Design</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4 ps-lg-5">
+                                <h6 class="fw-bold mb-4" style="color: #075277;"><b>Our Services</b></h6>
+                                <p><small>Cras fermentum odio eu feugiat lide <br>par naso tierra videa magna derita<br> valies</small></p>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-info text-light "><i class="fa-brands fa-twitter" style="color: #fcfcfc;"></i></button>
+                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-info text-light "><i class="fa-brands fa-facebook-f" style="color: #f1f2f3;"></i></button>
+                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-info text-light "><i class="fa-brands fa-facebook-f" style="color: #f1f2f3;"></i></button>
+                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-info text-light "><i class="fa-brands fa-spotify" style="color: #fcfcfc;"></i></button>
+                                    <button type="button" class="btn mx-1 mx-md-2 rounded-5 btn-info text-light "><i class="fa-brands fa-linkedin-in" style="color: #fbfcfe;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            <!-- *********** End Footer Top ********** -->
+            <!-- *********** Start Footer bottom ********** -->
+                <footer class="footer_bottom w-100 py-4 text-light">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-6 text-md-start">
+                                <p class="m-1">© Copyright Arsha. All Rights Reserved</p>
+                            </div>
+                            <div class="col-md-6 text-md-end">
+                                <p class="m-1">Designed by <a href="#"> BootstrapMade</a></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </footer>
+            <!-- *********** End Footer bottom ********** -->
+        <!-- ***************************** End Footer Section ********************************* -->
+
+        <!-- ***************************** Bootstrpa Js CDN Link's ********************************* -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <!-- ***************************** AOS Js CDN link's ******************************* -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- ***************************** Custom file Js link's ******************************* -->
+        <script src="./assert/js/script.js"></script>
+        <!-- initlize AOS -->
+        <script>
+            AOS.init();
+          </script>
+    </body>
+</html>
